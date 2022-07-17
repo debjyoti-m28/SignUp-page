@@ -1,4 +1,20 @@
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
 input{
-    margin: 15px 0px;
+    margin: 10px 0px;
     padding: 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+span{
+    font-size: 12px;
+    padding: 1px;
+    color: red;
+    display: none;
+  }
+input:invalid ~ span{
+    display: block;
 }
